@@ -138,9 +138,9 @@ function(){
 
 $('.img-rounded').css('border-radius','50%');
   
-$('img-thumb-white').css('border','3px solid #f3f3f3');
+$('.img-thumb-white').css('border','3px solid #f3f3f3');
   
-$('img-thumb-black').css('border','3px solid #0d0d0d');
+$('.img-thumb-black').css('border','3px solid #0d0d0d');
   
   
 };
