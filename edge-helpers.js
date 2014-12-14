@@ -38,19 +38,41 @@ var darkenColor = function LightenDarkenColor(col, amt) {
 
 }
 
-$('.btn').hover(function(){
+// button darken color by 35% on mouseover start
+
+$('.btn-darken').hover(function(){
 	normalColor = $(this).css('background-color');
 	console.log("on initial over this is the normalColor " + normalColor);
 	var normalHex = getNewColor(normalColor);
    console.log("converted to hex is " + normalHex);
-   var newColor = darkenColor(normalHex, -50);
-   console.log("darkened by 20 percent is" + newColor);
+   var newColor = darkenColor(normalHex, -35);
+   console.log("darkened by 35 percent is" + newColor);
    $(this).css('background-color', newColor);
    console.log(normalColor);
 },
 	function(){
 	$(this).css('background-color', normalColor);
 });
+  
+// end button darken
+  
+// button lighten color by 20% on mouseover start
+
+$('.btn-lighten').hover(function(){
+	normalColor = $(this).css('background-color');
+	console.log("on initial over this is the normalColor " + normalColor);
+	var normalHex = getNewColor(normalColor);
+   console.log("converted to hex is " + normalHex);
+   var newColor = darkenColor(normalHex, 20);
+   console.log("lightened by 20 percent is" + newColor);
+   $(this).css('background-color', newColor);
+   console.log(normalColor);
+},
+	function(){
+	$(this).css('background-color', normalColor);
+});
+  
+// end button darken
 
 // start shrink
 
@@ -61,8 +83,11 @@ $('.shrink').hover(function(){
 function(){
 	$(this).css('transform','scale(1,1');
 });
+
+// end shrink  
   
 // start ghost button
+  
 $('.btn-ghost').css('border','5px solid #fff');
 $('.btn-ghost').css('background-color','rgba(255,255,255,0.0)');
   
@@ -75,5 +100,7 @@ function(){
 	$(this).css('background-color','rgba(255,255,255,0.0)');
 	$(this).children("div").css('color','#fff');
 });
+  
+//end ghost button
 
 };
