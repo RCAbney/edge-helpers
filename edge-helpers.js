@@ -86,21 +86,41 @@ function(){
 
 // end shrink  
   
-// start ghost button
+// start ghost button white
   
-$('.btn-ghost').css('border','5px solid #fff');
-$('.btn-ghost').css('background-color','rgba(255,255,255,0.0)');
+$('.btn-ghost-white').css('border','5px solid #f3f3f3');
+$('.btn-ghost-white').css('background-color','rgba(243,243,243,0.0)');
+$('.btn-ghost-white').children("div").css('color','#f3f3f3');
   
-$('.btn-ghost').hover(function(){
+$('.btn-ghost-white').hover(function(){
 	$(this).css('transition','0.4s');
-  	$(this).css('background-color','rgba(255,255,255,1.0)')
-  	$(this).children("div").css('color','#000');
+  	$(this).css('background-color','rgba(243,243,243,1.0)')
+  	$(this).children("div").css('color','#0d0d0d');
 },
 function(){
-	$(this).css('background-color','rgba(255,255,255,0.0)');
-	$(this).children("div").css('color','#fff');
+	$(this).css('background-color','rgba(243,243,243,0.0)');
+	$(this).children("div").css('color','#f3f3f3');
 });
   
-//end ghost button
+//end ghost button white
+  
+// start ghost button black
+  
+$('.btn-ghost-black').css('border','5px solid #0d0d0d');
+$('.btn-ghost-black').css('background-color','rgba(13,13,13,0.0)');
+$('.btn-ghost-black').children("div").css('color','#0d0d0d');
+  
+$('.btn-ghost-black').hover(function(){
+	$(this).css('transition','0.4s');
+  	$(this).css('background-color','rgba(13,13,13,1.0)')
+  	$(this).children("div").css('color','#f3f3f3');
+},
+function(){
+	$(this).css('background-color','rgba(13,13,13,0.0)');
+	$(this).children("div").css('color','#0d0d0d');
+});
+  
+//end ghost button black
+
 
 };
