@@ -84,7 +84,19 @@ function(){
 	$(this).css('transform','scale(1,1');
 });
 
-// end shrink  
+// end shrink
+  
+// start grow
+
+$('.grow').hover(function(){
+	$(this).css('transition','0.3s');
+	$(this).css('transform','scale(1.1,1.1');
+},
+function(){
+	$(this).css('transform','scale(1,1');
+});
+
+// end grow  
   
 // start ghost button white
   
