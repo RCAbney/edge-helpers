@@ -137,26 +137,11 @@ function(){
 //end ghost button black
   
 // disclaimers 
-
-disclaimer = function(discname, duration){
-	$(discname).children('.disclaimer-modal').toggle(duration);
-};
   
 $('.disclaimer-btn').click(function(){
-	disclaimer('.disclaimer-btn',0);
+	$(this).children('.disclaimer-modal').toggle();
 });
 
-$('.disclaimer-btn-slow').click(function(){
-	disclaimer('.disclaimer-btn-slow',400);
-});
-
-$('.disclaimer-btn-med').click(function(){
-	disclaimer('.disclaimer-btn-med',250);
-});
-
-$('.disclaimer-btn-fast').click(function(){
-	disclaimer('.disclaimer-btn-fast',150);
-});
 
 // end disclaimers
   
