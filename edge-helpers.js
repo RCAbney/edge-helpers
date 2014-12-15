@@ -41,6 +41,7 @@ var darkenColor = function LightenDarkenColor(col, amt) {
 // button darken color by 35% on mouseover start
 
 $('.btn-darken').hover(function(){
+    $(this).css('transition', '0.3s');
 	normalColor = $(this).css('background-color');
 	console.log("on initial over this is the normalColor " + normalColor);
 	var normalHex = getNewColor(normalColor);
@@ -59,6 +60,7 @@ $('.btn-darken').hover(function(){
 // button lighten color by 20% on mouseover start
 
 $('.btn-lighten').hover(function(){
+    $(this).css('transition', '0.3s');
 	normalColor = $(this).css('background-color');
 	console.log("on initial over this is the normalColor " + normalColor);
 	var normalHex = getNewColor(normalColor);
