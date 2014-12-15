@@ -141,6 +141,10 @@ function(){
 disclaimer = function(discname, duration){
 	$(discname).children('.disclaimer-modal').toggle(duration);
 };
+  
+$('.disclaimer-btn-slow').click(function(){
+	disclaimer('.disclaimer-btn',0);
+});
 
 $('.disclaimer-btn-slow').click(function(){
 	disclaimer('.disclaimer-btn-slow',400);
