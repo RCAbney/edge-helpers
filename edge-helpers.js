@@ -102,7 +102,7 @@ function(){
   
 // start ghost button white
   
-$('.btn-ghost-white').css('border','5px solid #f3f3f3');
+$('.btn-ghost-white').css('border','2px solid #f3f3f3');
 $('.btn-ghost-white').css('background-color','rgba(243,243,243,0.0)');
 $('.btn-ghost-white').children("div").css('color','#f3f3f3');
   
@@ -120,7 +120,7 @@ function(){
   
 // start ghost button black
   
-$('.btn-ghost-black').css('border','5px solid #0d0d0d');
+$('.btn-ghost-black').css('border','2px solid #0d0d0d');
 $('.btn-ghost-black').css('background-color','rgba(13,13,13,0.0)');
 $('.btn-ghost-black').children("div").css('color','#0d0d0d');
   
