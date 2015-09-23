@@ -1,5 +1,11 @@
 edge-helpers
 ============
+
+###todo:
+* refactoring
+* helper classes can be removed and placed in external stylesheet
+* determine what else can be offloaded to external CSS (edge likes to overwrite with inline styles)
+
 to use in your edge animate composition include the following in your stage's composition ready
 
 helpers();
