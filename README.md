@@ -2,7 +2,7 @@ edge-helpers
 ============
 to use in your edge animate composition include the following in your stage's composition ready
 
-$(helpers());
+helpers();
 
 ============
 
