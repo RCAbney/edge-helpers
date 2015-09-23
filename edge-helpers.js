@@ -8,7 +8,7 @@ var getNewColor = function(rgb){
   ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
 };
 
-var darkenColor = function LightenDarkenColor(col, amt) {
+var lightenDarkenColor = function(col, amt) {
 
     var usePound = false;
 
@@ -46,7 +46,7 @@ $('.btn-darken').hover(function(){
 	console.log("on initial over this is the normalColor " + normalColor);
 	var normalHex = getNewColor(normalColor);
    console.log("converted to hex is " + normalHex);
-   var newColor = darkenColor(normalHex, -35);
+   var newColor = lightenDarkenColor(normalHex, -35);
    console.log("darkened by 35 percent is" + newColor);
    $(this).css('background-color', newColor);
    console.log(normalColor);
@@ -65,7 +65,7 @@ $('.btn-lighten').hover(function(){
 	console.log("on initial over this is the normalColor " + normalColor);
 	var normalHex = getNewColor(normalColor);
    console.log("converted to hex is " + normalHex);
-   var newColor = darkenColor(normalHex, 20);
+   var newColor = lightenDarkenColor(normalHex, 20);
    console.log("lightened by 20 percent is" + newColor);
    $(this).css('background-color', newColor);
    console.log(normalColor);
