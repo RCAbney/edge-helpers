@@ -1,10 +1,7 @@
-edge-helpers
-============
+# edge-helpers
 
-###todo:
-* refactoring
-* helper classes can be removed and placed in external stylesheet
-* determine what else can be offloaded to external CSS (edge likes to overwrite with inline styles)
+#no longer maintained
+Since adobe canned edge animate, I will no longer maintain this.
 
 to use in your edge animate composition include the following in your stage's composition ready
 
